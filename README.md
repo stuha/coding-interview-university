@@ -526,29 +526,29 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
         - [Jagged Arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Jagged-arrays/149042/177106-4.html)
         - [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
-    - [ ] Implement a vector (mutable array with automatic resizing):
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
-        - [ ] new raw data array with allocated memory
+    - [x] Implement a vector (mutable array with automatic resizing):
+        - [x] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+        - [x] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
-        - [ ] size() - number of items
-        - [ ] capacity() - number of items it can hold
-        - [ ] is_empty()
-        - [ ] at(index) - returns item at given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
+        - [x] size() - number of items
+        - [x] capacity() - number of items it can hold
+        - [x] is_empty()
+        - [x] at(index) - returns item at given index, blows up if index out of bounds
+        - [x] push(item)
+        - [x] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
+        - [x] prepend(item) - can use insert above at index 0
+        - [x] pop() - remove from end, return value
+        - [x] delete(index) - delete item at index, shifting all trailing elements left
+        - [x] remove(item) - looks for value and removes index holding it (even if in multiple places)
+        - [x] find(item) - looks for value and returns first index with that value, -1 if not found
+        - [x] resize(new_capacity) // private function
             - when you reach capacity, resize to double the size
             - when popping an item, if size is 1/4 of capacity, resize to half
-    - [ ] Time
+    - [x] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
@@ -568,13 +568,13 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
         - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
     - [ ] implement (I did with tail pointer & without):
-        - [ ] size() - returns number of data elements in list
-        - [ ] empty() - bool returns true if empty
-        - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-        - [ ] push_front(value) - adds an item to the front of the list
-        - [ ] pop_front() - remove front item and return its value
-        - [ ] push_back(value) - adds an item at the end
-        - [ ] pop_back() - removes end item and returns its value
+        - [x] size() - returns number of data elements in list
+        - [x] empty() - bool returns true if empty
+        - [x] value_at(index) - returns the value of the nth item (starting at 0 for first)
+        - [x] push_front(value) - adds an item to the front of the list
+        - [x] pop_front() - remove front item and return its value
+        - [x] push_back(value) - adds an item at the end
+        - [x] pop_back() - removes end item and returns its value
         - [ ] front() - get value of front item
         - [ ] back() - get value of end item
         - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
